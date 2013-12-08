@@ -11,7 +11,7 @@ Contributions are welcomed !
 
 ####Dependencies
 * [Underscore](https://script.google.com/d/1I21uLOwDKdyF3_W_hvh6WXiIKWJWno8yG9lB8lf1VBnZFQ6jAAhyNTRG/edit) for GAS
-* querystring-gas
+* [querystring-gas](https://github.com/illiatdesdindes/querystring-gas)
 
 Install
 -------
