@@ -1,6 +1,6 @@
 twilio-gas
 ==========
-**A Google Apps Script Twilio helper library.** Based on the [twilio-node](https://github.com/twilio/twilio-node) library.
+**A Google Apps Script [Twilio helper library](https://www.twilio.com/docs/libraries#JavaScript%20and%20GAS).** Based on the [twilio-node](https://github.com/twilio/twilio-node) library.
 
 
 Currently only *RestClient* and *TwimlRepsonse* modules have been adapted. Further work is needed to adpat the *Capability* module, as it depends on [node-jwt-simple](https://github.com/hokaccha/node-jwt-simple) which also needs to be adapted to Apps Script.
