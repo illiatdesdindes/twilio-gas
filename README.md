@@ -113,9 +113,9 @@ function doGet() {
 ###Complete Working Example
 In your Google Apps Script editor :
 ```javascript
-var twilioNumber = 'TWILIO_NUMBER';
-var myPhoneNumber = 'YOUR_PHONE';
-var myFriendNumber = 'FRIEND_PHONE';
+var twilioNumber =   '+12345678900'; // your twilio phone number
+var myPhoneNumber =  '+12345678911'; // your phone number
+var myFriendNumber = '+12345678922'; // your friend phone number
 
 function startCall() {
   var client = new twiliogas.RestClient('TWILIO_ACCOUNT_SID', 'TWILIO_AUTH_TOKEN');
