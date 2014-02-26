@@ -25,6 +25,8 @@ MJluEaWRLspBmhL09uKHPtNf9UcAuUuPd
 
 Here's [how to use](https://developers.google.com/apps-script/guide_libraries) a library in Google Apps Script.
 
+if you experience any issues with this project key. First ensure your using the last version of the library. Otherwise feel free to report your bug in the [issues section](https://github.com/illiatdesdindes/twilio-gas/issues).
+
 Getting Started
 ---------------
 
