@@ -1,39 +1,24 @@
 /**
-@module resources/Queues
-The Twilio "Queues" Resource.
+@module resources/Recordings
+The Twilio "Recordings" Resource.
 */
-//var generate = require('./generate'),
-//    ListInstanceResource = require('./ListInstanceResource');
 
-var Queues_ = function (client, accountSid) {
-    var baseResourceUrl = '/Accounts/' + accountSid + '/Queues';
+var Recordings_ = function (client, accountSid) {
+    var baseResourceUrl = '/Accounts/' + accountSid + '/Recordings';
 
     //Instance requests
-    function Queues(sid) {
+    function Recordings(sid) {
         var resourceApi = {};
 
         //Add standard instance resource functions
         generate_.restFunctions(resourceApi,client,['GET', 'POST', 'DELETE', {update:'POST'}], baseResourceUrl + '/' + sid);
 
-        //Add special call queue sub resources
-        resourceApi.members = ListInstanceResource_(client, accountSid, 'Queues/' + sid + '/Members',
-            ['GET', 'POST', {update:'POST'}],
-            ['GET']
-        );
-
-        //There's also a special resource for a call at the front of the queue, not specified by SID
-        resourceApi.members.front = {
-            get: resourceApi.members('Front').get,
-            post: resourceApi.members('Front').post,
-            update: resourceApi.members('Front').post
-        };
-
         return resourceApi;
     }
 
     //List requests
-    generate_.restFunctions(Queues, client, ['GET', 'POST', {create:'POST'}], baseResourceUrl);
+    generate_.restFunctions(Recordings, client, ['GET', 'POST', {create:'POST'}], baseResourceUrl);
 
 
-    return Queues;
+    return Recordings;
 };

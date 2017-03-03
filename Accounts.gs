@@ -14,6 +14,10 @@ var Accounts_ = function (client) {
                 ['GET', 'POST', { create:'POST' }]
             ),
             incomingPhoneNumbers : IncomingPhoneNumbers_(client, sid),
+            messages: ListInstanceResource_(client, sid, 'Messages',
+              ['GET'],
+              ['GET', 'POST', {create:'POST'}]
+            ),            
             sms:{
                 messages: ListInstanceResource_(client, sid, 'SMS/Messages',
                     ['GET'],
