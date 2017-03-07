@@ -15,15 +15,11 @@ Contributions are welcomed !
 
 Install
 -------
+Create a Google apps script library and include the `*.gs` files from this repo
 
-fork the repo or use directly this copy of the twilio-gas library in your own project. 
-Use the project key:
+Here's [how to create](https://developers.google.com/apps-script/guide_libraries#creating-a-library) a library in Google Apps Script
 
-```
-MJluEaWRLspBmhL09uKHPtNf9UcAuUuPd
-```
-
-Here's [how to use](https://developers.google.com/apps-script/guide_libraries) a library in Google Apps Script.
+Here's [how to use](https://developers.google.com/apps-script/guide_libraries) a library.
 
 if you experience any issues with this project key. First ensure your using the last version of the library. Otherwise feel free to report your bug in the [issues section](https://github.com/illiatdesdindes/twilio-gas/issues).
 
