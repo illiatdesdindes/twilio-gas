@@ -9,7 +9,7 @@ Contributions are welcomed !
 
 ***! Caution Alpha Work !***
 
-####Dependencies
+#### Dependencies
 * [Underscore](https://script.google.com/d/1I21uLOwDKdyF3_W_hvh6WXiIKWJWno8yG9lB8lf1VBnZFQ6jAAhyNTRG/edit) for GAS
 * [querystring-gas](https://github.com/illiatdesdindes/querystring-gas)
 
@@ -35,9 +35,9 @@ var client = new twiliogas.RestClient(account_sid, auth_token);
 // DO STUFF...
 ```
 
-###Getting Started With REST
+### Getting Started With REST
 
-####Send An SMS
+#### Send An SMS
 
 ```javascript
 client.sendSms({
@@ -47,7 +47,7 @@ client.sendSms({
 });
 ```
 
-####Make a Phone Call
+#### Make a Phone Call
 
 ```javascript
 client.makeCall({
@@ -63,7 +63,7 @@ client.makeCall({
 
 });
 ```
-###Getting Started With TwiML
+### Getting Started With TwiML
 
 ```javascript
 var resp = new twiliogas.TwimlResponse();
@@ -106,7 +106,7 @@ function doGet() {
   return ContentService.createTextOutput(resp.toString()).setMimeType(ContentService.MimeType.XML)
 }
 ```
-###Complete Working Example
+### Complete Working Example
 In your Google Apps Script editor :
 ```javascript
 var twilioNumber =   '+12345678900'; // your twilio phone number
